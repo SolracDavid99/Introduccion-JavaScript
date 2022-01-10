@@ -35,6 +35,8 @@ function nombrefuncion(parametros){
 
 */
 
+/*
+
 function saludar(){
     alert("Hola a todos");
 }
@@ -88,3 +90,50 @@ function Operaciones(num1,num2,num3,suma,resta,multi){
 }
 
 Operaciones(5,6,7);
+
+*/
+
+/*
+function Prompter(){
+    var respuesta = prompt("Buenos dias, cual es tu nombre?");
+    alert("Es un gusto saludarte " + respuesta);
+}
+
+Prompter();
+
+function areaCuadrado(){
+    var datoingresado = prompt("Ingresa un numero");
+    var resultado = datoingresado * datoingresado;
+    alert("El area del cuadro es " + resultado + " porque el numero que ingresaste es " + datoingresado);
+}
+
+areaCuadrado();
+
+*/
+
+function confirmacion(){
+    var pregunta = confirm("Deseas visitar Google.com y buscar fotos de perritos?");
+    if(pregunta){
+        alert("Te enviare rapidamente");
+        window.location = "https://www.google.com/search?q=google+perritos&rlz=1C1CHBF_esMX830MX830&sxsrf=AOaemvI2qXDrLGI9XR6oMzX4-VO5qflYFg:1641842420114&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjV_ujR86f1AhXYGc0KHRiQDPEQ_AUoAXoECAEQAw&biw=958&bih=927&dpr=1"
+    }
+    else{
+        alert("No hay problema, nos vemos luego");
+    }
+}
+
+//getElementById
+function cambiarColor(nuevoColor){
+    var elem = document.getElementById("parrafo");
+    elem.style.color = nuevoColor;
+}
+
+function Accion (Tipo){
+    var elem = document.getElementById ("DivBotones");
+    if (Tipo == "Ocultar"){
+    elem.style.display = 'none';
+    }
+    else{
+    elem.style.display = '';
+    }
+}
